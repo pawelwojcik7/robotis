@@ -26,8 +26,8 @@ public class MainFrame extends JFrame {
         getContentPane().add(recordPanel, BorderLayout.NORTH);
         getContentPane().add(dataPanel, BorderLayout.CENTER);
         getContentPane().add(xmlPanel, BorderLayout.SOUTH);
-pack();
-setVisible(true);
+        pack();
+        setVisible(true);
     }
 
     private Object fillForm(Object o) {
@@ -59,7 +59,7 @@ setVisible(true);
                     robot.keyRelease(KeyEvent.VK_RIGHT);
                     Thread.sleep(20);
                 } else {
-                    if(labeledCheckboxTextField.getLabelEnum().equals(LabelEnum.TYP_MATRYCY)){
+                    if (labeledCheckboxTextField.getLabelEnum().equals(LabelEnum.TYP_MATRYCY)) {
 
                         robot.keyPress(KeyEvent.VK_INSERT);
                         robot.keyRelease(KeyEvent.VK_INSERT);
